@@ -39,6 +39,7 @@ def stdev(data_set, avg):
 	return variance ** .5
 	
 def least(data_set):
+
 	"""
 	returns the least value in the data_set(population)
 	**Do not change this function**
@@ -54,20 +55,55 @@ def greatest(data_set):
 
 #Your grader will use this function to help them verify your code
 def test_z_score_function():
+# Added calculating least and greatest#  
   pop1_avg = mean(population1)
   pop1_sd = stdev(population1, pop1_avg)
+  pop1_least = least(population1)
+  pop1_greatest = greatest(population1)
 
+# Added least_z_score_p1 and greatest_z_scorep1#
   mean_z_score_p1 = z_score(pop1_avg, pop1_avg, pop1_sd)
+  least_z_score_p1 = z_score(pop1_least, pop1_avg, pop1_sd)
+  greatest_z_score_p1 = z_score(pop1_least, pop1_avg, pop1_sd)
 
+# Added pop2_least#
   pop2_greatest = greatest(population2)
   pop2_avg = mean(population2)
   pop2_sd = stdev(population2, pop2_avg)
+  pop2_least = least(population2)
 
+# Added least and mean of z-scores#   
   greatest_z_score_p2 = z_score(pop2_greatest, pop2_avg, pop2_sd)
+  least_z_score_p2 = z_score(pop2_least, pop2_avg, pop2_sd)
+  mean_z_score_p2 = z_score(pop2_avg, pop2_avg, pop2_sd)
 
+# Added test function for population3#
+  pop3_avg = mean(population3)
+  pop3_sd = stdev(population3, pop3_avg)
+  pop3_least = least(population3)
+  pop3_greatest = greatest(population3)	 
+
+  mean_z_score_p3 = z_score(pop3_avg, pop1_avg, pop3_sd)
+  least_z_score_p3 = z_score(pop3_least, pop3_avg, pop3_sd)
+  greatest_z_score_p3 = z_score(pop3_least, pop3_avg, pop3_sd)
+
+
+
+# Updated print function based on changes for pop1#
   print("The z-score of the mean of population1 is", mean_z_score_p1)
+  print("The z-score of the greatest value of population1 is" ,greatest_z_score_p1)
+  print("The z-score of the least value of population1 is", least_z_score_p1)
+
+#Updates print function based on changes for pop2#
   print("The z-score of the greatest value of population2 is", greatest_z_score_p2)
-  
+  print("The z-score of the mean of population2 is", mean_z_score_p2)
+  print("The z-score of the least value of population2 is", least_z_score_p2)
+
+#Added print function for poplulation3#
+  print("The z-score of the mean of population3 is", mean_z_score_p3)
+  print("The z-score of the greatest value of population3 is" ,greatest_z_score_p3)
+  print("The z-score of the least value of population3 is", least_z_score_p3)
+
 
 #####################################################
 # YOUR CODE GOES BELOW THIS BOX.                    #
@@ -87,5 +123,10 @@ def z_score(x, mu, sigma):
 
   Returns the z-score of x
 	"""
-	return
+	return (x - mu) / sigma
+
+# Call test function to implement z_score
+test_z_score_function()
+
+
 
