@@ -87,10 +87,15 @@ def test_z_score_function():
   least_z_score_p3 = z_score(pop3_least, pop3_avg, pop3_sd)
   greatest_z_score_p3 = z_score(pop3_greatest, pop3_avg, pop3_sd)
 
-# For testing mean of population1, population2 and population3
+# For testing mean of datasets (mu)
   print("mean of population1 :", pop1_avg) 
   print("mean of population2 :", pop2_avg) 
   print("mean of population3 :", pop3_avg) 
+
+# For testing Standard Deviation of datasets(sigma)
+  print("Standart Deviation of population1 :", pop1_sd)
+  print("Standart Deviation of population2 :", pop2_sd)
+  print("Standart Deviation of population3 :", pop3_sd)
 
 
 
