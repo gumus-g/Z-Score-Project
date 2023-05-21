@@ -97,6 +97,15 @@ def test_z_score_function():
   print("Standart Deviation of population2 :", pop2_sd)
   print("Standart Deviation of population3 :", pop3_sd)
 
+# For testing greatest population value
+  print("greatest population value of population1:", pop1_greatest)
+  print("greatest population value of population2:", pop2_greatest)
+  print("greatest population value of population3:", pop3_greatest)
+
+# For testin least population value
+  print("least population value of population1:", pop1_least)
+  print("least population value of population1:", pop2_least)
+  print("least population value of population1:", pop3_least)
 
 
 
