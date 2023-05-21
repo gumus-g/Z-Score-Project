@@ -83,9 +83,9 @@ def test_z_score_function():
   pop3_least = least(population3)
   pop3_greatest = greatest(population3)	 
 
-  mean_z_score_p3 = z_score(pop3_avg, pop1_avg, pop3_sd)
+  mean_z_score_p3 = z_score(pop3_avg, pop3_avg, pop3_sd)
   least_z_score_p3 = z_score(pop3_least, pop3_avg, pop3_sd)
-  greatest_z_score_p3 = z_score(pop3_least, pop3_avg, pop3_sd)
+  greatest_z_score_p3 = z_score(pop3_greatest, pop3_avg, pop3_sd)
 
 
 
