@@ -104,8 +104,8 @@ def test_z_score_function():
 
 # For testing least population value
   print("least population value of population1:", pop1_least)
-  print("least population value of population1:", pop2_least)
-  print("least population value of population1:", pop3_least)
+  print("least population value of population2:", pop2_least)
+  print("least population value of population3:", pop3_least)
 
 
 
