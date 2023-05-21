@@ -61,23 +61,23 @@ def test_z_score_function():
   pop1_least = least(population1)
   pop1_greatest = greatest(population1)
 
-# Added least_z_score_p1 and greatest_z_scorep1#
+# Added least_z_score_p1 and greatest_z_scorep1
   mean_z_score_p1 = z_score(pop1_avg, pop1_avg, pop1_sd)
   least_z_score_p1 = z_score(pop1_least, pop1_avg, pop1_sd)
   greatest_z_score_p1 = z_score(pop1_least, pop1_avg, pop1_sd)
 
-# Added pop2_least#
+# Added pop2_least
   pop2_greatest = greatest(population2)
   pop2_avg = mean(population2)
   pop2_sd = stdev(population2, pop2_avg)
   pop2_least = least(population2)
 
-# Added least and mean of z-scores#   
+# Added least and mean of z-scores   
   greatest_z_score_p2 = z_score(pop2_greatest, pop2_avg, pop2_sd)
   least_z_score_p2 = z_score(pop2_least, pop2_avg, pop2_sd)
   mean_z_score_p2 = z_score(pop2_avg, pop2_avg, pop2_sd)
 
-# Added test function for population3#
+# Added test function for population3
   pop3_avg = mean(population3)
   pop3_sd = stdev(population3, pop3_avg)
   pop3_least = least(population3)
@@ -86,6 +86,12 @@ def test_z_score_function():
   mean_z_score_p3 = z_score(pop3_avg, pop3_avg, pop3_sd)
   least_z_score_p3 = z_score(pop3_least, pop3_avg, pop3_sd)
   greatest_z_score_p3 = z_score(pop3_greatest, pop3_avg, pop3_sd)
+
+# For testing mean of population1, population2 and population3
+  print("mean of population1 :", pop1_avg) 
+  print("mean of population2 :", pop2_avg) 
+  print("mean of population3 :", pop3_avg) 
+
 
 
 
