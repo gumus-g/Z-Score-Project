@@ -64,7 +64,7 @@ def test_z_score_function():
 # Added least_z_score_p1 and greatest_z_scorep1
   mean_z_score_p1 = z_score(pop1_avg, pop1_avg, pop1_sd)
   least_z_score_p1 = z_score(pop1_least, pop1_avg, pop1_sd)
-  greatest_z_score_p1 = z_score(pop1_least, pop1_avg, pop1_sd)
+  greatest_z_score_p1 = z_score(pop1_greatest, pop1_avg, pop1_sd)
 
 # Added pop2_least
   pop2_greatest = greatest(population2)
@@ -147,6 +147,8 @@ def z_score(x, mu, sigma):
 
 # Call test function to implement z_score
 test_z_score_function()
+print('z-score = ', (46 - 5.56)/ 28.60)
+
 
 
 
