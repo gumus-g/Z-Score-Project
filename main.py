@@ -147,7 +147,7 @@ def z_score(x, mu, sigma):
 
 # Call test function to implement z_score
 test_z_score_function()
-print('z-score = ', (46 - 5.56)/ 28.60)
+
 
 
 
